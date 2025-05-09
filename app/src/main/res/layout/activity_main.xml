@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp Saver!"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            app:prefixText="+88"
+            android:hint="এখানে নাম্বার লিখুন">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edNumber"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:hint="এখানে নাম লিখুন"
+            android:layout_marginVertical="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:hint="এখানে মেসেজ লিখুন">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edMessage"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="."/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="5dp"
+            android:backgroundTint="#2FBD64"
+            android:text="মেসেজ পাঠান"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginHorizontal="75dp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
